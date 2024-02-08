@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F52D732B75540500753B47 /* Sine_Convergence_and_Precision_AnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52D722B75540500753B47 /* Sine_Convergence_and_Precision_AnalysisApp.swift */; };
+		63F52D752B75540500753B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52D742B75540500753B47 /* ContentView.swift */; };
+		63F52D772B75540700753B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F52D762B75540700753B47 /* Assets.xcassets */; };
+		63F52D7B2B75540700753B47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F52D7A2B75540700753B47 /* Preview Assets.xcassets */; };
+		63F52D852B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52D842B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisTests.swift */; };
+		63F52D8F2B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52D8E2B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITests.swift */; };
+		63F52D912B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52D902B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63F52D812B75540800753B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F52D672B75540500753B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F52D6E2B75540500753B47;
+			remoteInfo = "Sine Convergence and Precision Analysis";
+		};
+		63F52D8B2B75540800753B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F52D672B75540500753B47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F52D6E2B75540500753B47;
+			remoteInfo = "Sine Convergence and Precision Analysis";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63F52D6F2B75540500753B47 /* Sine Convergence and Precision Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sine Convergence and Precision Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F52D722B75540500753B47 /* Sine_Convergence_and_Precision_AnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sine_Convergence_and_Precision_AnalysisApp.swift; sourceTree = "<group>"; };
+		63F52D742B75540500753B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63F52D762B75540700753B47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F52D782B75540700753B47 /* Sine_Convergence_and_Precision_Analysis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sine_Convergence_and_Precision_Analysis.entitlements; sourceTree = "<group>"; };
+		63F52D7A2B75540700753B47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63F52D802B75540800753B47 /* Sine Convergence and Precision AnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sine Convergence and Precision AnalysisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F52D842B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sine_Convergence_and_Precision_AnalysisTests.swift; sourceTree = "<group>"; };
+		63F52D8A2B75540800753B47 /* Sine Convergence and Precision AnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sine Convergence and Precision AnalysisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F52D8E2B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sine_Convergence_and_Precision_AnalysisUITests.swift; sourceTree = "<group>"; };
+		63F52D902B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F52D6C2B75540500753B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D7D2B75540800753B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D872B75540800753B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F52D662B75540500753B47 = {
+			isa = PBXGroup;
+			children = (
+				63F52D712B75540500753B47 /* Sine Convergence and Precision Analysis */,
+				63F52D832B75540800753B47 /* Sine Convergence and Precision AnalysisTests */,
+				63F52D8D2B75540800753B47 /* Sine Convergence and Precision AnalysisUITests */,
+				63F52D702B75540500753B47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63F52D702B75540500753B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F52D6F2B75540500753B47 /* Sine Convergence and Precision Analysis.app */,
+				63F52D802B75540800753B47 /* Sine Convergence and Precision AnalysisTests.xctest */,
+				63F52D8A2B75540800753B47 /* Sine Convergence and Precision AnalysisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F52D712B75540500753B47 /* Sine Convergence and Precision Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				63F52D722B75540500753B47 /* Sine_Convergence_and_Precision_AnalysisApp.swift */,
+				63F52D742B75540500753B47 /* ContentView.swift */,
+				63F52D762B75540700753B47 /* Assets.xcassets */,
+				63F52D782B75540700753B47 /* Sine_Convergence_and_Precision_Analysis.entitlements */,
+				63F52D792B75540700753B47 /* Preview Content */,
+			);
+			path = "Sine Convergence and Precision Analysis";
+			sourceTree = "<group>";
+		};
+		63F52D792B75540700753B47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63F52D7A2B75540700753B47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63F52D832B75540800753B47 /* Sine Convergence and Precision AnalysisTests */ = {
+			isa = PBXGroup;
+			children = (
+				63F52D842B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisTests.swift */,
+			);
+			path = "Sine Convergence and Precision AnalysisTests";
+			sourceTree = "<group>";
+		};
+		63F52D8D2B75540800753B47 /* Sine Convergence and Precision AnalysisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63F52D8E2B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITests.swift */,
+				63F52D902B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift */,
+			);
+			path = "Sine Convergence and Precision AnalysisUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F52D6E2B75540500753B47 /* Sine Convergence and Precision Analysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F52D942B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision Analysis" */;
+			buildPhases = (
+				63F52D6B2B75540500753B47 /* Sources */,
+				63F52D6C2B75540500753B47 /* Frameworks */,
+				63F52D6D2B75540500753B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sine Convergence and Precision Analysis";
+			productName = "Sine Convergence and Precision Analysis";
+			productReference = 63F52D6F2B75540500753B47 /* Sine Convergence and Precision Analysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63F52D7F2B75540800753B47 /* Sine Convergence and Precision AnalysisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F52D972B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision AnalysisTests" */;
+			buildPhases = (
+				63F52D7C2B75540800753B47 /* Sources */,
+				63F52D7D2B75540800753B47 /* Frameworks */,
+				63F52D7E2B75540800753B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F52D822B75540800753B47 /* PBXTargetDependency */,
+			);
+			name = "Sine Convergence and Precision AnalysisTests";
+			productName = "Sine Convergence and Precision AnalysisTests";
+			productReference = 63F52D802B75540800753B47 /* Sine Convergence and Precision AnalysisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63F52D892B75540800753B47 /* Sine Convergence and Precision AnalysisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F52D9A2B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision AnalysisUITests" */;
+			buildPhases = (
+				63F52D862B75540800753B47 /* Sources */,
+				63F52D872B75540800753B47 /* Frameworks */,
+				63F52D882B75540800753B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F52D8C2B75540800753B47 /* PBXTargetDependency */,
+			);
+			name = "Sine Convergence and Precision AnalysisUITests";
+			productName = "Sine Convergence and Precision AnalysisUITests";
+			productReference = 63F52D8A2B75540800753B47 /* Sine Convergence and Precision AnalysisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F52D672B75540500753B47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					63F52D6E2B75540500753B47 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					63F52D7F2B75540800753B47 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 63F52D6E2B75540500753B47;
+					};
+					63F52D892B75540800753B47 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 63F52D6E2B75540500753B47;
+					};
+				};
+			};
+			buildConfigurationList = 63F52D6A2B75540500753B47 /* Build configuration list for PBXProject "Sine Convergence and Precision Analysis" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63F52D662B75540500753B47;
+			productRefGroup = 63F52D702B75540500753B47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F52D6E2B75540500753B47 /* Sine Convergence and Precision Analysis */,
+				63F52D7F2B75540800753B47 /* Sine Convergence and Precision AnalysisTests */,
+				63F52D892B75540800753B47 /* Sine Convergence and Precision AnalysisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F52D6D2B75540500753B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F52D7B2B75540700753B47 /* Preview Assets.xcassets in Resources */,
+				63F52D772B75540700753B47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D7E2B75540800753B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D882B75540800753B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F52D6B2B75540500753B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F52D752B75540500753B47 /* ContentView.swift in Sources */,
+				63F52D732B75540500753B47 /* Sine_Convergence_and_Precision_AnalysisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D7C2B75540800753B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F52D852B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F52D862B75540800753B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F52D912B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITestsLaunchTests.swift in Sources */,
+				63F52D8F2B75540800753B47 /* Sine_Convergence_and_Precision_AnalysisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63F52D822B75540800753B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F52D6E2B75540500753B47 /* Sine Convergence and Precision Analysis */;
+			targetProxy = 63F52D812B75540800753B47 /* PBXContainerItemProxy */;
+		};
+		63F52D8C2B75540800753B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F52D6E2B75540500753B47 /* Sine Convergence and Precision Analysis */;
+			targetProxy = 63F52D8B2B75540800753B47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63F52D922B75540800753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63F52D932B75540800753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		63F52D952B75540800753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sine Convergence and Precision Analysis/Sine_Convergence_and_Precision_Analysis.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sine Convergence and Precision Analysis/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63F52D962B75540800753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sine Convergence and Precision Analysis/Sine_Convergence_and_Precision_Analysis.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sine Convergence and Precision Analysis/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63F52D982B75540800753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-AnalysisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sine Convergence and Precision Analysis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sine Convergence and Precision Analysis";
+			};
+			name = Debug;
+		};
+		63F52D992B75540800753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-AnalysisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sine Convergence and Precision Analysis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sine Convergence and Precision Analysis";
+			};
+			name = Release;
+		};
+		63F52D9B2B75540800753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-AnalysisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sine Convergence and Precision Analysis";
+			};
+			name = Debug;
+		};
+		63F52D9C2B75540800753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "phys440.Sine-Convergence-and-Precision-AnalysisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sine Convergence and Precision Analysis";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F52D6A2B75540500753B47 /* Build configuration list for PBXProject "Sine Convergence and Precision Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F52D922B75540800753B47 /* Debug */,
+				63F52D932B75540800753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F52D942B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F52D952B75540800753B47 /* Debug */,
+				63F52D962B75540800753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F52D972B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision AnalysisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F52D982B75540800753B47 /* Debug */,
+				63F52D992B75540800753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F52D9A2B75540800753B47 /* Build configuration list for PBXNativeTarget "Sine Convergence and Precision AnalysisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F52D9B2B75540800753B47 /* Debug */,
+				63F52D9C2B75540800753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F52D672B75540500753B47 /* Project object */;
+}
