@@ -13,8 +13,10 @@ import Observation
     var xVal = 0.0
     var sinSum = 0.0
     var prec = false
+    var sinBuiltIn = 0.0
     
-    func initSinSum(N: Int, xVal: Double) -> Double {
+    //(xValue: Double, order: Int, start: Int) async -> (direction: String, xValue: Double, order: Int, start: Int, besselValue: Double)
+    func initSinSum(N: Int, xVal: Double) async -> (direction: String, xValue: Double, order: Int, sinValue: Double) {
         self.N = N
         self.xVal = xVal
         
@@ -24,12 +26,18 @@ import Observation
             sinSum = sinSum + Double(numerator)/denominator
         }
         
-        return sinSum
+        //return sinSum
+        return ((direction: "Sum Result", xValue: xVal, order: N, sinValue: sinSum))
         
     }
     
-    func getPrecision(dec: Int) -> Bool {
-        let nextSum = initSinSum(N: N+1, xVal: xVal)
+    func formatSinBuiltin(xVal: Double) async -> (direction: String, xValue: Double, order: Int, sinValue: Double) {
+        sinBuiltIn = sin(xVal)
+        return ((direction: "Built-in Result", xValue: xVal, order: N, sinValue: sinBuiltIn))
+    }
+    
+    func getPrecision(dec: Int) async -> Bool {
+        let nextSum = await initSinSum(N: N+1, xVal: xVal)
         let precision = sinSum * 1/Double(pow(10, dec))
         
         if (nextSum <= precision) {

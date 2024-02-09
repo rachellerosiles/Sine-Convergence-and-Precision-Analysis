@@ -19,8 +19,8 @@ struct ContentView: View {
     @State var guess = ""
     @State private var totalInput: Int? = 1 //l -> x
     //@State var besselResultArray :[(direction: String, xValue: Double, order: Int, start: Int, besselValue: Double)] = []
-    @State var sinResultsArray :[(xValue: Double, terms: Int, sumVal: Double, builtinVal: Double)] = []
-    
+    @State var sinResultsArray :[(direction: String, xValue: Double, order: Int, sinValue: Double)] = []
+    //direction: String, xValue: Double, order: Int, besselValue: Double
     private var intFormatter: NumberFormatter = {
         let f = NumberFormatter()
         f.numberStyle = .decimal
@@ -120,11 +120,11 @@ struct ContentView: View {
                 //Do whatever processing that you need with the returned results of all of the child tasks here.
                 
                 // Sort the results based upon the direction of the result
-                let sortedFinishedResults = besselResultArray.sorted(by: { $0.1 < $1.1 })
+                let sortedFinishedResults = sinResultsArray.sorted(by: { $0.1 < $1.1 })
                 
-                await clearBesselArray()
+                await clearSinArray()
             
-                await updateBesselArray(array: sortedFinishedResults)
+                await updateSinArray(array: sortedFinishedResults)
                 
                         var guessString = ""
             
@@ -135,7 +135,7 @@ struct ContentView: View {
                             guessString += " "
                             guessString += item.direction
                             guessString += " "
-                            guessString += String(format: "Bessel = %7.5e", item.besselValue)
+                            guessString += String(format: "Bessel = %7.5e", item.sinValue)
                             guessString += "\n"
             
             
@@ -157,10 +157,10 @@ struct ContentView: View {
         }
         
         //func calculateUpwardDownwardBessel(index: Int, step: Double, xmin: Double, order: Int, start: Int) async {
-        func calculateSinSum(index: Int, step: Double, xmin: Double, order: Int) {
+    func calculateSinSum(index: Int, step: Double, xmin: Double, order: Int) async {
                 
-                let resultsOfTaskCalculation = await withTaskGroup(of: (direction: String, xValue: Double, order: Int, start: Int, besselValue: Double).self /* this is the return from the taskGroup*/,
-                                                                   returning: [(direction: String, xValue: Double, order: Int, start: Int, besselValue: Double)].self /* this is the return of all of the results */,
+                let resultsOfTaskCalculation = await withTaskGroup(of: (direction: String, xValue: Double, order: Int, sinValue: Double).self /* this is the return from the taskGroup*/,
+                                                                   returning: [(direction: String, xValue: Double, order: Int, sinValue: Double)].self /* this is the return of all of the results */,
                                                                    body: { taskGroup in  /*This is the body of the task*/
                     
                     // We can use `taskGroup` to spawn child tasks here.
@@ -171,25 +171,26 @@ struct ContentView: View {
                         let x = Double(index)*step + xmin
                         
                         //Create a new instance of the Bessel Function Calculator object so that each has it's own calculating function to avoid potential issues with reentrancy problem
-                        let downwardResult = await BesselFunctionCalculator().calculateDownwardRecursion(xValue: x, order: order, start: start)
+                        //let downwardResult = await BesselFunctionCalculator().calculateDownwardRecursion(xValue: x, order: order, start: start)
+                        let sumresult = await sinSum().initSinSum(N: order, xVal: x)
                         
-                        
-                        return (downwardResult)  /* this is the return from the taskGroup*/
+                        return (sumresult)
+                        //direction: "Downward", xValue: xValue, order: order, start: start, besselValue: downwardBessel /* this is the return from the taskGroup*/
                         
                     }
                     taskGroup.addTask {
                         
                         let x = Double(index)*step + xmin
                         //Create a new instance of the Bessel Function Calculator object so that each has it's own calculating function to avoid potential issues with reentrancy problem
-                        let upperResult = await BesselFunctionCalculator().calculateUpwardRecursion(xValue: x, order: order)
-                        
-                        return (upperResult)  /* this is the return from the taskGroup*/
+                        //let upperResult = await BesselFunctionCalculator().calculateUpwardRecursion(xValue: x, order: order)
+                        let mathResult = await sinSum().formatSinBuiltin(xVal: x)
+                        return (mathResult)  /* this is the return from the taskGroup*/
                         
                     }
                     
                     
                     // Collate the results of all child tasks
-                    var combinedTaskResults :[(direction: String, xValue: Double, order: Int, start: Int, besselValue: Double)] = []
+                    var combinedTaskResults :[(direction: String, xValue: Double, order: Int, sinValue: Double)] = []
                     for await result in taskGroup {
                         
                         combinedTaskResults.append(result)
@@ -204,7 +205,7 @@ struct ContentView: View {
                 // Sort the results based upon the direction of the result
                 let sortedCombinedResults = resultsOfTaskCalculation.sorted(by: { $0.0 > $1.0 })
                 
-                await updateBesselArray(array: sortedCombinedResults)
+                await updateSinArray(array: sortedCombinedResults)
                 
             return
         }
@@ -219,15 +220,16 @@ struct ContentView: View {
             
         }
         
-        @MainActor func updateBesselArray(array:[(direction: String, xValue: Double, order: Int, start: Int, besselValue: Double)]){
+        @MainActor func updateSinArray(array:[(direction: String, xValue: Double, order: Int, sinValue: Double)]){
             
-            besselResultArray += array
+            sinResultsArray += array
+            //besselResultArray += array
             
         }
         
-        @MainActor func clearBesselArray(){
+        @MainActor func clearSinArray(){
             
-            besselResultArray = []
+            sinResultsArray = []
             
            
             
