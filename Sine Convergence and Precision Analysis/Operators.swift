@@ -2,9 +2,6 @@
 //  Operators.swift
 //  Regular Bessel Function SwiftUI
 //
-//  Created by Jeff Terry on 2/2/17.
-//  Copyright © 2017 Jeff Terry. All rights reserved.
-//
 
 import SwiftUI
 import Foundation

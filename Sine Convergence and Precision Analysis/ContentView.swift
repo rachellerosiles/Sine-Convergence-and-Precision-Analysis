@@ -2,15 +2,9 @@
 //  ContentView.swift
 //  Sine Convergence and Precision Analysis
 //
-//  Created by Edin Peskovic on 2/8/24.
+//  Created by Rachelle Rosiles on 2/8/24.
 //
 
-//
-//  ContentView.swift
-//  Regular-Bessel-Function-Observation
-//
-//  Created by Jeff_Terry on 1/13/24.
-//
 
 import SwiftUI
 
@@ -172,7 +166,7 @@ struct ContentView: View {
                         
                         //Create a new instance of the Bessel Function Calculator object so that each has it's own calculating function to avoid potential issues with reentrancy problem
                         //let downwardResult = await BesselFunctionCalculator().calculateDownwardRecursion(xValue: x, order: order, start: start)
-                        let sumresult = await sinSum().initSinSum(N: order, xVal: x)
+                        let sumresult = await sinSum().initSinSum(N: order, inputXVal: x)
                         
                         return (sumresult)
                         //direction: "Downward", xValue: xValue, order: order, start: start, besselValue: downwardBessel /* this is the return from the taskGroup*/

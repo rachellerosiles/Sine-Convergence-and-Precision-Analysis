@@ -2,7 +2,7 @@
 //  Sine_Convergence_and_Precision_AnalysisApp.swift
 //  Sine Convergence and Precision Analysis
 //
-//  Created by Edin Peskovic on 2/8/24.
+//  Created by Rachelle Rosiles on 2/8/24.
 //
 
 import SwiftUI

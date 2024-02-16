@@ -2,7 +2,7 @@
 //  Sine_Convergence_and_Precision_AnalysisTests.swift
 //  Sine Convergence and Precision AnalysisTests
 //
-//  Created by Edin Peskovic on 2/8/24.
+//  Created by Rachelle Rosiles on 2/8/24.
 //
 
 import XCTest
